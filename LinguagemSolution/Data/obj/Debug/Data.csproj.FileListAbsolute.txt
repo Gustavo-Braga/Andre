@@ -1,0 +1,2 @@
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache

@@ -1,0 +1,14 @@
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\LinguagemConsole\obj\Debug\LinguagemConsole.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\LinguagemConsole\obj\Debug\LinguagemConsole.csprojResolveAssemblyReference.cache
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\LinguagemConsole\bin\Debug\LinguagemConsole.exe.config
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\LinguagemConsole\bin\Debug\LinguagemConsole.exe
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\LinguagemConsole\bin\Debug\LinguagemConsole.pdb
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\LinguagemConsole\bin\Debug\Business2.dll
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\LinguagemConsole\bin\Debug\Entidade.dll
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\LinguagemConsole\bin\Debug\Data2.dll
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\LinguagemConsole\bin\Debug\Business2.pdb
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\LinguagemConsole\bin\Debug\Entidade.pdb
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\LinguagemConsole\bin\Debug\Data2.pdb
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\LinguagemConsole\obj\Debug\LinguagemConsole.csproj.CopyComplete
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\LinguagemConsole\obj\Debug\LinguagemConsole.exe
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\LinguagemConsole\obj\Debug\LinguagemConsole.pdb

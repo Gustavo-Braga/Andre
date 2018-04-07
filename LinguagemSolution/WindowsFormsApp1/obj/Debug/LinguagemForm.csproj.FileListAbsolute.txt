@@ -1,0 +1,17 @@
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\obj\Debug\LinguagemForm.csproj.GenerateResource.cache
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\obj\Debug\LinguagemForm.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\obj\Debug\LinguagemForm.csprojResolveAssemblyReference.cache
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\bin\Debug\Business2.dll
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\bin\Debug\Entidade.dll
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\bin\Debug\Data2.dll
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\bin\Debug\Business2.pdb
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\bin\Debug\Entidade.pdb
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\bin\Debug\Data2.pdb
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\WindowsFormsApp1\obj\Debug\LinguagemForm.csproj.CopyComplete
