@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,37 +10,77 @@ namespace Data2
 {
     public class ControleProblemaData
     {
-        public List<ControleProblema> Mock { get; set; }
+        public const string ConectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ControleProblema;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public ControleProblemaData()
         {
-            this.Mock = new List<ControleProblema>();
         }
 
         public void Inserir(ControleProblema controleProblema)
         {
-            Mock.Add(controleProblema);
+            var conect = ConectionString;
+            using (var conn = new SqlConnection(conect))
+            {
+                conn.Open();
+
+                using (var comm = conn.CreateCommand())
+                {
+                    comm.CommandText = @"Insert into Problema(
+                                            descricao,
+                                            nivel,
+                                            tipo,
+                                            dataCriacao
+                                        )
+                                        values(
+                                            @Descricao,
+                                            @NivelProblema,
+                                            @TipoProblema,
+                                            @DataCriacao
+                                        )";
+
+                    comm.Parameters.AddWithValue("Descricao", controleProblema.Descricao);
+                    comm.Parameters.AddWithValue("NivelProblema", controleProblema.NivelProblema);
+                    comm.Parameters.AddWithValue("TipoProblema", controleProblema.TipoProblema);
+                    comm.Parameters.AddWithValue("DataCriacao", controleProblema.DataCriacao);
+
+                    comm.ExecuteNonQuery();
+                }
+                conn.Close();
+            }
+
         }
 
         public List<ControleProblema> Listar()
         {
-            for(var i = 0; i < 3; i++)
+            var controleProblemas = new List<ControleProblema>();
+            using (var conn = new SqlConnection(ConectionString))
             {
-                Mock.Add(new ControleProblema
+                conn.Open();
+
+                using (var comm = conn.CreateCommand())
                 {
-                    Id = i,
-                    Descricao = "descricao " + i,
-                    DataCriacao = DateTime.Now,
-                    Nivel = i + 10,
-                    TipoProblema = new Tipo
+                    comm.CommandText = @"
+                    SELECT Id, Descricao, DataCriacao, tipo, nivel  FROM Problema 
+                    order by Id";
+                    using (var reader = comm.ExecuteReader())
                     {
-                        Id = i+20,
-                        Descricao = "tipo descricao "+i
+                        while (reader.Read())
+                        {
+                            controleProblemas.Add(new ControleProblema()
+                            {
+                                Id = (int)reader["Id"],
+                                Descricao = reader["Descricao"].ToString(),
+                                DataCriacao = (DateTime)reader["DataCriacao"],
+                                TipoProblema = (int)reader["tipo"],
+                                NivelProblema = (int)reader["nivel"]
+                            });
+                        }
                     }
-                    
-                });
+                }
+                conn.Close();
+
             }
-            return Mock;
+            return controleProblemas;
         }
     }
 }

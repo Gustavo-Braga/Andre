@@ -1,13 +1,6 @@
 ﻿using Business2;
 using Entidade;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ControleProblemaForm2
@@ -22,6 +15,24 @@ namespace ControleProblemaForm2
 
         private void btnGravar_Click(object sender, EventArgs e)
         {
+            var problema = new ControleProblema()
+            {
+                Descricao = txtDescricao.Text,
+                NivelProblema = int.Parse(txtNivel.Text),
+                TipoProblema = int.Parse(txtTipoProblema.Text)
+            };
+            try
+            {
+                var controleProblemaBusiness = new ControleProblemaBusiness();
+                controleProblemaBusiness.Inserir(problema);
+                AtualizarGridControleProblema();
+
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("erro "+ex);
+            }
+            
 
         }
 
@@ -38,8 +49,8 @@ namespace ControleProblemaForm2
                         cont.Id,
                         cont.Descricao,
                         cont.DataCriacao,
-                        cont.TipoProblema.Descricao,
-                        cont.Nivel
+                        cont.TipoProblema,
+                        cont.NivelProblema
                     );
                 }
 

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Entidade
 {
-    public class Tipo
+    public class Nivel
     {
         public int Id { get; set; }
         public string Descricao { get; set; }
 
-        public Tipo() { }
+        public Nivel() { }
 
-        public Tipo(int id, string descricao)
+        public Nivel(int id, string descricao)
         {
             this.Id = id;
             this.Descricao = descricao;

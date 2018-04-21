@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ControleProblema.cs" />
     <Compile Include="Linguagem.cs" />
+    <Compile Include="Nivel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tipo.cs" />
   </ItemGroup>

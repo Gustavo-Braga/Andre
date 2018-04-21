@@ -12,6 +12,7 @@ namespace Business2
     {
         public void Inserir(ControleProblema controleProblema)
         {
+            controleProblema.DataCriacao = DateTime.Now;
             var data = new ControleProblemaData();
             data.Inserir(controleProblema);
         }

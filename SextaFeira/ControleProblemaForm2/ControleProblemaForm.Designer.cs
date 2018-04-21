@@ -116,7 +116,7 @@
             this.dgvControleProblema.Location = new System.Drawing.Point(29, 236);
             this.dgvControleProblema.Name = "dgvControleProblema";
             this.dgvControleProblema.ReadOnly = true;
-            this.dgvControleProblema.Size = new System.Drawing.Size(546, 150);
+            this.dgvControleProblema.Size = new System.Drawing.Size(596, 150);
             this.dgvControleProblema.TabIndex = 17;
             this.dgvControleProblema.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -137,6 +137,7 @@
             this.DataCriacao.HeaderText = "DataCriacao";
             this.DataCriacao.Name = "DataCriacao";
             this.DataCriacao.ReadOnly = true;
+            this.DataCriacao.Width = 150;
             // 
             // TipoProblema
             // 
