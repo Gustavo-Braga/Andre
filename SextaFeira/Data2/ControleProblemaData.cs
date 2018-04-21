@@ -69,7 +69,6 @@ namespace Data2
             }
 
         }
-
         public void InserirNivel(Nivel nivel)
         {
             using (var conn = new SqlConnection(ConectionString))

@@ -10,17 +10,38 @@ namespace Business2
 {
     public class ControleProblemaBusiness
     {
-        public void Inserir(ControleProblema controleProblema)
+        public void InserirProblema(ControleProblema controleProblema)
         {
             controleProblema.DataCriacao = DateTime.Now;
             var data = new ControleProblemaData();
-            data.Inserir(controleProblema);
+            data.InserirProblema(controleProblema);
         }
-
-        public List<ControleProblema> Listar()
+        public List<ControleProblema> ListarProblema()
         {
             var data = new ControleProblemaData();
-            return data.Listar();
+            return data.ListarProblema();
+        }
+
+        public void InserirTipo(Tipo tipo)
+        {
+            var data = new ControleProblemaData();
+            data.InserirTipo(tipo);
+        }
+        public List<Tipo> ListarTipo()
+        {
+            var data = new ControleProblemaData();
+            return data.ListarTipo();
+        }
+
+        public void InserirNivel(Nivel nivel)
+        {
+            var data = new ControleProblemaData();
+            data.InserirNivel(nivel);
+        }
+        public List<Nivel> ListarNivel()
+        {
+            var data = new ControleProblemaData();
+            return data.ListarNivel();
         }
     }
 }
