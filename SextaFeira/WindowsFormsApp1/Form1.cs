@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
                 var linguagemBusiness = new LinguagemBusiness();
                 linguagemBusiness.Inserir(linguagem);
                 LimparForm();
-                AtualizarGrid(linguagem);
+                AtualizarGrid();
             }
             catch (Exception)
             {
@@ -40,51 +40,39 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void AtualizarGrid(Linguagem linguagem = null)
+        private void AtualizarGrid()
         {
-           
+
             //var linguagemBusiness = new LinguagemBusiness();
             //dgvLinguagem.DataSource = linguagemBusiness.Listar();
             //dgvLinguagem.Refresh();//nao funcionou
 
 
             //solucao rápida
-            if(linguagem == null)
-            {
-                var linguagemBusiness = new LinguagemBusiness();
-                var linguagens = linguagemBusiness.Listar();
-
-                foreach (var ling in linguagens)
-                {
-                    dgvLinguagem.Rows.Add(
-                        ling.Id,
-                        ling.Nome,
-                        ling.Pontuacao
-                    );
-                }
-
-            }
-            else
+            var linguagemBusiness = new LinguagemBusiness();
+            var linguagens = linguagemBusiness.Listar();
+            dgvLinguagem.Rows.Clear();
+            foreach (var ling in linguagens)
             {
                 dgvLinguagem.Rows.Add(
-                        linguagem.Id,
-                        linguagem.Nome,
-                        linguagem.Pontuacao
-                    );
+                    ling.Id,
+                    ling.Nome,
+                    ling.Pontuacao
+                );
             }
-            
-        }
-
-        private void LimparForm()
-        {
-            txtNome.Text = "";
-            txtPontuacao.Text = "";
-        }
-
-        private void dgvLinguagem_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
         }
+
+    private void LimparForm()
+    {
+        txtNome.Text = "";
+        txtPontuacao.Text = "";
+    }
+
+    private void dgvLinguagem_CellContentClick(object sender, DataGridViewCellEventArgs e)
+    {
 
     }
+
+}
 }

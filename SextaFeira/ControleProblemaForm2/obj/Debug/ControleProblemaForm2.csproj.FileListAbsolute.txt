@@ -15,3 +15,5 @@ C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaFo
 C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm2\obj\Debug\ControleProblemaForm2.csproj.CopyComplete
 C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm2\obj\Debug\ControleProblemaForm2.exe
 C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm2\obj\Debug\ControleProblemaForm2.pdb
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm2\obj\Debug\ControleProblemaForm2.TipoForm.resources
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm2\obj\Debug\ControleProblemaForm2.NivelForm.resources

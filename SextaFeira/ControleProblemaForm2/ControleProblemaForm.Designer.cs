@@ -32,22 +32,25 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.btnGravar = new System.Windows.Forms.Button();
-            this.txtNivel = new System.Windows.Forms.TextBox();
-            this.txtTipoProblema = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.dgvControleProblema = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataCriacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TipoProblema = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnCadastraraTipo = new System.Windows.Forms.Button();
+            this.cboTipos = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cboNivel = new System.Windows.Forms.ComboBox();
+            this.btnCadastrarNivel = new System.Windows.Forms.Button();
+            this.btnFechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvControleProblema)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPontuacao
             // 
             this.lblPontuacao.AutoSize = true;
-            this.lblPontuacao.Location = new System.Drawing.Point(26, 63);
+            this.lblPontuacao.Location = new System.Drawing.Point(171, 9);
             this.lblPontuacao.Name = "lblPontuacao";
             this.lblPontuacao.Size = new System.Drawing.Size(31, 13);
             this.lblPontuacao.TabIndex = 10;
@@ -71,36 +74,13 @@
             // 
             // btnGravar
             // 
-            this.btnGravar.Location = new System.Drawing.Point(29, 181);
+            this.btnGravar.Location = new System.Drawing.Point(29, 83);
             this.btnGravar.Name = "btnGravar";
-            this.btnGravar.Size = new System.Drawing.Size(75, 23);
+            this.btnGravar.Size = new System.Drawing.Size(132, 23);
             this.btnGravar.TabIndex = 6;
-            this.btnGravar.Text = "Gravar";
+            this.btnGravar.Text = "Gravar Problema";
             this.btnGravar.UseVisualStyleBackColor = true;
             this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
-            // 
-            // txtNivel
-            // 
-            this.txtNivel.Location = new System.Drawing.Point(29, 79);
-            this.txtNivel.Name = "txtNivel";
-            this.txtNivel.Size = new System.Drawing.Size(100, 20);
-            this.txtNivel.TabIndex = 12;
-            // 
-            // txtTipoProblema
-            // 
-            this.txtTipoProblema.Location = new System.Drawing.Point(29, 136);
-            this.txtTipoProblema.Name = "txtTipoProblema";
-            this.txtTipoProblema.Size = new System.Drawing.Size(100, 20);
-            this.txtTipoProblema.TabIndex = 13;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 120);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 13);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Tipo do Problema";
             // 
             // dgvControleProblema
             // 
@@ -151,21 +131,81 @@
             this.Nivel.Name = "Nivel";
             this.Nivel.ReadOnly = true;
             // 
+            // btnCadastraraTipo
+            // 
+            this.btnCadastraraTipo.Location = new System.Drawing.Point(29, 112);
+            this.btnCadastraraTipo.Name = "btnCadastraraTipo";
+            this.btnCadastraraTipo.Size = new System.Drawing.Size(132, 23);
+            this.btnCadastraraTipo.TabIndex = 18;
+            this.btnCadastraraTipo.Text = "Cadastrar Tipo";
+            this.btnCadastraraTipo.UseVisualStyleBackColor = true;
+            this.btnCadastraraTipo.Click += new System.EventHandler(this.btnCadastraraTipo_Click);
+            // 
+            // cboTipos
+            // 
+            this.cboTipos.FormattingEnabled = true;
+            this.cboTipos.Location = new System.Drawing.Point(322, 25);
+            this.cboTipos.Name = "cboTipos";
+            this.cboTipos.Size = new System.Drawing.Size(121, 21);
+            this.cboTipos.TabIndex = 19;
+            this.cboTipos.SelectedIndexChanged += new System.EventHandler(this.cboTipos_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(319, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 13);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Tipo do Problema";
+            // 
+            // cboNivel
+            // 
+            this.cboNivel.FormattingEnabled = true;
+            this.cboNivel.Location = new System.Drawing.Point(162, 25);
+            this.cboNivel.Name = "cboNivel";
+            this.cboNivel.Size = new System.Drawing.Size(121, 21);
+            this.cboNivel.TabIndex = 21;
+            // 
+            // btnCadastrarNivel
+            // 
+            this.btnCadastrarNivel.Location = new System.Drawing.Point(29, 141);
+            this.btnCadastrarNivel.Name = "btnCadastrarNivel";
+            this.btnCadastrarNivel.Size = new System.Drawing.Size(132, 23);
+            this.btnCadastrarNivel.TabIndex = 22;
+            this.btnCadastrarNivel.Text = "Cadastrar Nivel";
+            this.btnCadastrarNivel.UseVisualStyleBackColor = true;
+            this.btnCadastrarNivel.Click += new System.EventHandler(this.btnCadastrarNivel_Click);
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.Location = new System.Drawing.Point(29, 170);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(132, 23);
+            this.btnFechar.TabIndex = 23;
+            this.btnFechar.Text = "Fechar";
+            this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
             // ControleProblemaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFechar);
+            this.Controls.Add(this.btnCadastrarNivel);
+            this.Controls.Add(this.cboNivel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cboTipos);
+            this.Controls.Add(this.btnCadastraraTipo);
             this.Controls.Add(this.dgvControleProblema);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtTipoProblema);
-            this.Controls.Add(this.txtNivel);
             this.Controls.Add(this.lblPontuacao);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.btnGravar);
             this.Name = "ControleProblemaForm";
             this.Text = "ControleProblemaForm";
+            this.Load += new System.EventHandler(this.ControleProblemaForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvControleProblema)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -177,14 +217,17 @@
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Button btnGravar;
-        private System.Windows.Forms.TextBox txtNivel;
-        private System.Windows.Forms.TextBox txtTipoProblema;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvControleProblema;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descricao;
         private System.Windows.Forms.DataGridViewTextBoxColumn DataCriacao;
         private System.Windows.Forms.DataGridViewTextBoxColumn TipoProblema;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nivel;
+        private System.Windows.Forms.Button btnCadastraraTipo;
+        private System.Windows.Forms.ComboBox cboTipos;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cboNivel;
+        private System.Windows.Forms.Button btnCadastrarNivel;
+        private System.Windows.Forms.Button btnFechar;
     }
 }

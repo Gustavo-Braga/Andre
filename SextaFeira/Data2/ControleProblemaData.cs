@@ -55,11 +55,11 @@ namespace Data2
                 conn.Open();
                 using (var comm = conn.CreateCommand())
                 {
-                    comm.CommandText = @"Insert into Problema(
-                                            descricao,
+                    comm.CommandText = @"Insert into Tipo(
+                                            descricao
                                         )
                                         values(
-                                            @Descricao,
+                                            @Descricao
                                         )";
 
                     comm.Parameters.AddWithValue("Descricao", tipo.Descricao);
@@ -76,11 +76,11 @@ namespace Data2
                 conn.Open();
                 using (var comm = conn.CreateCommand())
                 {
-                    comm.CommandText = @"Insert into Problema(
-                                            descricao,
+                    comm.CommandText = @"Insert into Nivel(
+                                            descricao
                                         )
                                         values(
-                                            @Descricao,
+                                            @Descricao
                                         )";
 
                     comm.Parameters.AddWithValue("Descricao", nivel.Descricao);
@@ -159,7 +159,7 @@ namespace Data2
                 using (var comm = conn.CreateCommand())
                 {
                     comm.CommandText = @"
-                    SELECT Id, Descricao FROM Tipo 
+                    SELECT Id, Descricao FROM Nivel 
                     order by Id";
                     using (var reader = comm.ExecuteReader())
                     {
