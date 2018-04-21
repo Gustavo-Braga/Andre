@@ -1,0 +1,16 @@
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\Entidade\bin\Debug\Entidade.dll
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\Entidade\bin\Debug\Entidade.pdb
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\Entidade\obj\Debug\Entidade.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\Entidade\obj\Debug\Entidade.dll
+C:\Users\Gustavo\Desktop\Linguagem\LinguagemSolution\Entidade\obj\Debug\Entidade.pdb
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\LinguagemSolution\Entidade\bin\Debug\Entidade.dll
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\LinguagemSolution\Entidade\bin\Debug\Entidade.pdb
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\LinguagemSolution\Entidade\obj\Debug\Entidade.csprojResolveAssemblyReference.cache
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\LinguagemSolution\Entidade\obj\Debug\Entidade.csproj.CoreCompileInputs.cache
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\LinguagemSolution\Entidade\obj\Debug\Entidade.dll
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\LinguagemSolution\Entidade\obj\Debug\Entidade.pdb
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\Entidade\bin\Debug\Entidade.dll
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\Entidade\bin\Debug\Entidade.pdb
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\Entidade\obj\Debug\Entidade.csproj.CoreCompileInputs.cache
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\Entidade\obj\Debug\Entidade.dll
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\Entidade\obj\Debug\Entidade.pdb

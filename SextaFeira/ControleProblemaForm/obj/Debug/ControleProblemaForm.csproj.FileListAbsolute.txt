@@ -1,0 +1,15 @@
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\bin\Debug\ControleProblemaForm.dll
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\bin\Debug\ControleProblemaForm.pdb
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\bin\Debug\Business2.dll
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\bin\Debug\Entidade.dll
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\bin\Debug\Data2.dll
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\bin\Debug\Business2.pdb
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\bin\Debug\Entidade.pdb
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\bin\Debug\Data2.pdb
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\obj\Debug\ControleProblemaForm.csprojResolveAssemblyReference.cache
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\obj\Debug\ControleProblemaForm.ControleProblemaForm.resources
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\obj\Debug\ControleProblemaForm.csproj.GenerateResource.cache
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\obj\Debug\ControleProblemaForm.csproj.CoreCompileInputs.cache
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\obj\Debug\ControleProblemaForm.csproj.CopyComplete
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\obj\Debug\ControleProblemaForm.dll
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\ControleProblemaForm\obj\Debug\ControleProblemaForm.pdb
