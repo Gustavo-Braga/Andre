@@ -16,10 +16,9 @@ namespace Data2
         {
         }
 
-        public void Inserir(ControleProblema controleProblema)
+        public void InserirProblema(ControleProblema controleProblema)
         {
-            var conect = ConectionString;
-            using (var conn = new SqlConnection(conect))
+            using (var conn = new SqlConnection(ConectionString))
             {
                 conn.Open();
 
@@ -49,8 +48,51 @@ namespace Data2
             }
 
         }
+        public void InserirTipo(Tipo tipo)
+        {
+            using (var conn = new SqlConnection(ConectionString))
+            {
+                conn.Open();
+                using (var comm = conn.CreateCommand())
+                {
+                    comm.CommandText = @"Insert into Problema(
+                                            descricao,
+                                        )
+                                        values(
+                                            @Descricao,
+                                        )";
 
-        public List<ControleProblema> Listar()
+                    comm.Parameters.AddWithValue("Descricao", tipo.Descricao);
+                    comm.ExecuteNonQuery();
+                }
+                conn.Close();
+            }
+
+        }
+
+        public void InserirNivel(Nivel nivel)
+        {
+            using (var conn = new SqlConnection(ConectionString))
+            {
+                conn.Open();
+                using (var comm = conn.CreateCommand())
+                {
+                    comm.CommandText = @"Insert into Problema(
+                                            descricao,
+                                        )
+                                        values(
+                                            @Descricao,
+                                        )";
+
+                    comm.Parameters.AddWithValue("Descricao", nivel.Descricao);
+                    comm.ExecuteNonQuery();
+                }
+                conn.Close();
+            }
+
+        }
+
+        public List<ControleProblema> ListarProblema()
         {
             var controleProblemas = new List<ControleProblema>();
             using (var conn = new SqlConnection(ConectionString))
@@ -81,6 +123,60 @@ namespace Data2
 
             }
             return controleProblemas;
+        }
+        public List<Tipo> ListarTipo()
+        {
+            var tipos = new List<Tipo>();
+            using (var conn = new SqlConnection(ConectionString))
+            {
+                conn.Open();
+                using (var comm = conn.CreateCommand())
+                {
+                    comm.CommandText = @"
+                    SELECT Id, Descricao FROM Tipo 
+                    order by Id";
+                    using (var reader = comm.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            tipos.Add(new Tipo()
+                            {
+                                Id = (int)reader["Id"],
+                                Descricao = reader["Descricao"].ToString(),
+                            });
+                        }
+                    }
+                }
+                conn.Close();
+            }
+            return tipos;
+        }
+        public List<Nivel> ListarNivel()
+        {
+            var niveis = new List<Nivel>();
+            using (var conn = new SqlConnection(ConectionString))
+            {
+                conn.Open();
+                using (var comm = conn.CreateCommand())
+                {
+                    comm.CommandText = @"
+                    SELECT Id, Descricao FROM Tipo 
+                    order by Id";
+                    using (var reader = comm.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            niveis.Add(new Nivel()
+                            {
+                                Id = (int)reader["Id"],
+                                Descricao = reader["Descricao"].ToString(),
+                            });
+                        }
+                    }
+                }
+                conn.Close();
+            }
+            return niveis;
         }
     }
 }
