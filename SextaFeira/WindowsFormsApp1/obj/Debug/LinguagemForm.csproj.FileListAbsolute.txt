@@ -49,3 +49,4 @@ C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\WindowsFormsApp1\o
 C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\WindowsFormsApp1\obj\Debug\LinguagemForm.csproj.CopyComplete
 C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\gusta\OneDrive\Documentos\Faculdade\Andre\SextaFeira\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.RepositorioForm.resources

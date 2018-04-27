@@ -10,15 +10,15 @@ namespace Data
 {
     public class LinguagemData
     {
-        public const string ConectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=PROJETOLINGUAGEM;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        public const string ConectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LINGUAGEM;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
-        public List<Linguagem> Listar()
+        public List<Linguagem> ListarLinguagem()
         {
             var linguagens = new List<Linguagem>();
             var conect = ConectionString;
             using (var conn = new SqlConnection(conect))
             {
-               conn.Open();
+                conn.Open();
 
                 using (var comm = conn.CreateCommand())
                 {
@@ -44,7 +44,7 @@ namespace Data
             return linguagens;
         }
 
-        public void Inserir(Linguagem linguagem)
+        public void InserirLinguagem(Linguagem linguagem)
         {
             var conect = ConectionString;
             using (var conn = new SqlConnection(conect))
@@ -60,6 +60,59 @@ namespace Data
                     comm.Parameters.AddWithValue("Nome", linguagem.Nome);
                     comm.Parameters.AddWithValue("Pontuacao", linguagem.Pontuacao);
 
+                    comm.ExecuteNonQuery();
+                }
+                conn.Close();
+
+            }
+        }
+
+
+        public List<Repositorio> ListarRepositorio()
+        {
+            var repositorios = new List<Repositorio>();
+            using (var conn = new SqlConnection(ConectionString))
+            {
+                conn.Open();
+                using (var comm = conn.CreateCommand())
+                {
+                    comm.CommandText = @"
+                    SELECT Id, Nome, LINGUAGEM,DATACRIACAO FROM REPOSITORIO 
+                    order by Id";
+                    using (var reader = comm.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            repositorios.Add(new Repositorio()
+                            {
+                                Id = (int)reader["Id"],
+                                Nome = reader["Nome"].ToString(),
+                                IdLinguagem = (int)reader["LINGUAGEM"],
+                                DataCriacao = (DateTime)reader["DATACRIACAO"]
+                            });
+                        }
+                    }
+                }
+                conn.Close();
+
+            }
+            return repositorios;
+        }
+
+        public void InserirRepositorio(Repositorio repositorio)
+        {
+            using (var conn = new SqlConnection(ConectionString))
+            {
+                conn.Open();
+
+                using (var comm = conn.CreateCommand())
+                {
+                    comm.CommandText = @"Insert into Repositorio(NOME,LINGUAGEM,DataCriacao)
+                                        values(@nome,@Linguagem,@DataCriacao)";
+
+                    comm.Parameters.AddWithValue("Nome", repositorio.Nome);
+                    comm.Parameters.AddWithValue("Linguagem", repositorio.IdLinguagem);
+                    comm.Parameters.AddWithValue("DataCriacao", repositorio.DataCriacao);
                     comm.ExecuteNonQuery();
                 }
                 conn.Close();

@@ -61,7 +61,7 @@ namespace ControleProblemaForm2
                 throw new Exception("erro " + ex);
             }
         }
-
+    
         private void AtualizarGridControleProblema()
         {
             var controleProblemaBusiness = new ControleProblemaBusiness();

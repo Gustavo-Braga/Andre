@@ -10,18 +10,30 @@ namespace Business
 {
     public class LinguagemBusiness
     {
-        public void Inserir(Linguagem linguagem)
+        public void InserirLinguagem(Linguagem linguagem)
         {
             var data = new LinguagemData();
-            linguagem.Id = data.Listar().Count() + 1;
+            linguagem.Id = data.ListarLinguagem().Count() + 1;
            
-            data.Inserir(linguagem);
+            data.InserirLinguagem(linguagem);
         }
 
-        public List<Linguagem> Listar()
+        public List<Linguagem> ListarLinguagem()
         {
             var data = new LinguagemData();
-            return data.Listar();
+            return data.ListarLinguagem();
+        }
+
+        public void InserirRepositorio(Repositorio repositorio)
+        {
+            var data = new LinguagemData();
+            data.InserirRepositorio(repositorio);
+        }
+
+        public List<Repositorio> ListarRepositorio()
+        {
+            var data = new LinguagemData();
+            return data.ListarRepositorio();
         }
     }
 }

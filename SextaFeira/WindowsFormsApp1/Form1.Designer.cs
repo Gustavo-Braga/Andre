@@ -37,6 +37,9 @@
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pontuacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnRepositorio = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnFechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinguagem)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,11 +113,43 @@
             this.Pontuacao.HeaderText = "Pontuacao";
             this.Pontuacao.Name = "Pontuacao";
             // 
+            // btnRepositorio
+            // 
+            this.btnRepositorio.Location = new System.Drawing.Point(358, 98);
+            this.btnRepositorio.Name = "btnRepositorio";
+            this.btnRepositorio.Size = new System.Drawing.Size(75, 23);
+            this.btnRepositorio.TabIndex = 6;
+            this.btnRepositorio.Text = "Repositorio";
+            this.btnRepositorio.UseVisualStyleBackColor = true;
+            this.btnRepositorio.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.Location = new System.Drawing.Point(489, 71);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(75, 23);
+            this.btnFechar.TabIndex = 8;
+            this.btnFechar.Text = "Fechar";
+            this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFechar);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRepositorio);
             this.Controls.Add(this.dgvLinguagem);
             this.Controls.Add(this.lblPontuacao);
             this.Controls.Add(this.lblNome);
@@ -140,6 +175,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pontuacao;
+        private System.Windows.Forms.Button btnRepositorio;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnFechar;
     }
 }
 

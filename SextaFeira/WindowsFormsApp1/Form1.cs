@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
             try
             {
                 var linguagemBusiness = new LinguagemBusiness();
-                linguagemBusiness.Inserir(linguagem);
+                linguagemBusiness.InserirLinguagem(linguagem);
                 LimparForm();
                 AtualizarGrid();
             }
@@ -42,15 +42,8 @@ namespace WindowsFormsApp1
 
         private void AtualizarGrid()
         {
-
-            //var linguagemBusiness = new LinguagemBusiness();
-            //dgvLinguagem.DataSource = linguagemBusiness.Listar();
-            //dgvLinguagem.Refresh();//nao funcionou
-
-
-            //solucao rápida
             var linguagemBusiness = new LinguagemBusiness();
-            var linguagens = linguagemBusiness.Listar();
+            var linguagens = linguagemBusiness.ListarLinguagem();
             dgvLinguagem.Rows.Clear();
             foreach (var ling in linguagens)
             {
@@ -74,5 +67,16 @@ namespace WindowsFormsApp1
 
     }
 
-}
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var repositorio = new RepositorioForm();
+            repositorio.Show();
+            this.Hide();
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+    }
 }
